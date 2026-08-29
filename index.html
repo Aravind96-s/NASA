@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("download1.jpeg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed; /* this makes it "fixed" */
+      background-size: cover;
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      width: 320px;
+      
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-login {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .btn-login:hover {
+      background-color: #45a049;
+    }
+
+    .btn-signup {
+      background-color: #008CBA;
+      color: white;
+    }
+    .btn-signup:hover {
+      background-color: #007bb5;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="download.png" alt="Rathinam Technical Campus Logo" class="logo">
+    
+    <h1>Welcome</h1>
+    <button class="btn btn-login" onclick="login()">Login</button>
+    <button class="btn btn-signup" onclick="signup()">Sign Up</button>
+  </div>
+
+  <script>
+    function login() {
+      alert("Redirecting to Login Page...");
+      // window.location.href = "login.html";
+    }
+
+    function signup() {
+      alert("Redirecting to Sign Up Page...");
+      // window.location.href = "signup.html";
+    }
+  </script>
+</body>
+</html>
